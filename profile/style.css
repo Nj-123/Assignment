@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    color: white;
+}
+h1{
+    font-size: 40px;
+}
+#header{
+    margin-top:20px;
+    width:100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: right;
+  
+    background-repeat: no-repeat;
+    
+}
+.container{
+    padding:10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin:10px 20px;
+    font-size: 20px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top:20%;
+    font-size:30px;
+}
+
+.header-text h2{
+    font-size:60px;
+}
+.header-text h2 span{
+    color: red;
+}
+/*about*/
+
+#about{
+    padding:80px 0px;
+    color:#ababab;
+
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col1{
+    flex-basis: 35%;
+}
+.col1 img{
+    width:100%;
+    border-radius: 15px;
+}
+.col2{
+    flex-basis: 60%;
+}
+.col2 h2{
+    font-size: 60px;
+    font-weight: 600;
+    color:white;
+
+}
+.tab-titles{
+    display: flex;
+    margin:20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position:relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width:50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin:10px 0;
+}
+.tab-contents span{
+    color:red;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*contact*/
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left span{
+    margin-top: 30px;
+}
+.contact-left i{
+    color:#ff004f;
+    margin: 15px;
+    font-size: 25px;
+}
+
+
+.copyright{
+    width:100%;
+    text-align: center;
+    padding:25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 220px;
+}
+
+  
